@@ -1,11 +1,26 @@
 
+// {
+//     let H=10;
+//     let taraba= '';
+//     for(let i =0; i<=H/2; i++){
+//         taraba+= ' '.repeat(H-i)+ '#'. repeat(i) 
+//         taraba+= '\n'
+//         for()
+//     }
+//     console.log(taraba);
+// }
+
+//
 {
-    let H=10;
+    H=10
     let taraba= '';
-    for(let i =0; i<=H/2; i++){
-        taraba+= ' '.repeat(H-i)+ '#'. repeat(i) 
-        taraba+= '\n'
-        for()
+    for(let i=H; i>0; i--){
+        taraba+= ' '.repeat(i)+ '#'.repeat(H-(i-1))+ '#'.repeat(H-i)
+        taraba += '\n'
     }
-    console.log(taraba);
+    for(let j=H; j>0; j--){
+        taraba+= '#'.repeat(j)+ ' '.repeat(H-(j-1))+ ' '.repeat(H-j)
+        taraba += '\n'
+    
+    }
 }
