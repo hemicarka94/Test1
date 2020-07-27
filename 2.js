@@ -18,9 +18,10 @@
         taraba+= ' '.repeat(i)+ '#'.repeat(H-(i-1))+ '#'.repeat(H-i)
         taraba += '\n'
     }
-    for(let j=H; j>0; j--){
-        taraba+= '#'.repeat(j)+ ' '.repeat(H-(j-1))+ ' '.repeat(H-j)
+    for(let j=0; j<H; j++){
+        taraba+= ' '.repeat(j)+ '#'.repeat(H-(j-1))+ '#'.repeat(H-j)
         taraba += '\n'
     
     }
+    console.log(taraba)
 }
